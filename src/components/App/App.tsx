@@ -39,7 +39,7 @@ export default function App() {
   };
 
   const movies = data?.results;
-  const totalPages = data?.total_pages;
+  const totalPages = data?.total_pages ?? 0;
 
   const handleSelect = (movie: Movie) => {
     setSelectedMovie(movie);
